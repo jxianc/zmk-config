@@ -1,0 +1,68 @@
+// https://github.com/infused-kim/zmk-config/blob/main/config/includes/behaviours_homerow_mods.dtsi
+// https://github.com/urob/zmk-config#timeless-homerow-mods
+
+#define HM_TAPPING_TERM 300
+#define HM_TAPPING_TERM_FAST 200
+#define HM_PRIOR_IDLE 150
+
+/ {
+  behaviors {
+    // Positional Homerow mods
+    hml: homerow_mod_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      bindings = <&kp>,  <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM>;
+      quick-tap-ms = <175>;                // repeat on tap-into-hold
+      require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+      hold-trigger-key-positions = <KEYS_R KEYS_T>;
+      hold-trigger-on-release;
+    };
+
+    hm_r: homerow_mods_right {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+      hold-trigger-key-positions = <KEYS_L KEYS_T>;
+      hold-trigger-on-release;
+    };
+
+    // Positional Homerow mods for shift
+    hm_shift_l: hm_shift_l {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+      hold-trigger-key-positions = <KEYS_R KEYS_T>;
+      // hold-trigger-on-release;
+    };
+
+    hm_shift_r: hm_shift_r {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      bindings = <&kp>, <&kp>;
+
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+      quick-tap-ms = <175>;
+      require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+      hold-trigger-key-positions = <KEYS_L KEYS_T>;
+      // hold-trigger-on-release;
+    };
+  }
+};
