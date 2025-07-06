@@ -1,0 +1,67 @@
+#define NAV_COMBO_TIMEOUT_MS 50
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_shift_alt_n0 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LB0>; // RSHFT + N0
+            bindings = <&shift_alt_number N0>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n1 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LB3>; // RSHFT + N1
+            bindings = <&shift_alt_number N1>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n2 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LB2>; // RSHFT + N2
+            bindings = <&shift_alt_number N2>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n3 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LB1>; // RSHFT + N3
+            bindings = <&shift_alt_number N3>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n4 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LM3>; // RSHFT + N4
+            bindings = <&shift_alt_number N4>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n5 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LM2>; // RSHFT + N5
+            bindings = <&shift_alt_number N5>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n6 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LM1>; // RSHFT + N6
+            bindings = <&shift_alt_number N6>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n7 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LT3>; // RSHFT + N7
+            bindings = <&shift_alt_number N7>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n8 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LT2>; // RSHFT + N8
+            bindings = <&shift_alt_number N8>;
+            layers = <NAV>;
+        };
+        combo_shift_alt_n9 {
+            timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
+            key-positions = <RH1 LT1>; // RSHFT + N9
+            bindings = <&shift_alt_number N9>;
+            layers = <NAV>;
+        };
+    };
+};
