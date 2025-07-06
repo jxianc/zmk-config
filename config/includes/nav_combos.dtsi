@@ -1,0 +1,67 @@
+#define COMBO_TIMEOUT 50
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_shift_1 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LB2>; // RSHFT + N1
+            bindings = <&kp LALT LSHFT N1>;
+            layers = <3>;
+        };
+        combo_shift_2 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LB3>; // RSHFT + N2
+            bindings = <&kp LALT LSHFT N2>;
+            layers = <3>;
+        };
+        combo_shift_3 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LB4>; // RSHFT + N3
+            bindings = <&kp LALT LSHFT N3>;
+            layers = <3>;
+        };
+        combo_shift_4 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LM2>; // RSHFT + N4
+            bindings = <&kp LALT LSHFT N4>;
+            layers = <3>;
+        };
+        combo_shift_5 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LM3>; // RSHFT + N5
+            bindings = <&kp LALT LSHFT N5>;
+            layers = <3>;
+        };
+        combo_shift_6 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LM4>; // RSHFT + N6
+            bindings = <&kp LALT LSHFT N6>;
+            layers = <3>;
+        };
+        combo_shift_7 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LT2>; // RSHFT + N7
+            bindings = <&kp LALT LSHFT N7>;
+            layers = <3>;
+        };
+        combo_shift_8 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LT3>; // RSHFT + N8
+            bindings = <&kp LALT LSHFT N8>;
+            layers = <3>;
+        };
+        combo_shift_9 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LT4>; // RSHFT + N9
+            bindings = <&kp LALT LSHFT N9>;
+            layers = <3>;
+        };
+        combo_shift_0 {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <RB0 LB5>; // RSHFT + N0
+            bindings = <&kp LALT LSHFT N0>;
+            layers = <3>;
+        };
+    };
+};
