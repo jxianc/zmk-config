@@ -1,0 +1,64 @@
+/ {
+    behaviors {
+        mm_n0: mod_morph_n0 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N0>, <&shift_alt_number N0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n1: mod_morph_n1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N1>, <&shift_alt_number N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n2: mod_morph_n2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N2>, <&shift_alt_number N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n3: mod_morph_n3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N3>, <&shift_alt_number N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n4: mod_morph_n4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N4>, <&shift_alt_number N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n5: mod_morph_n5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N5>, <&shift_alt_number N5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n6: mod_morph_n6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N6>, <&shift_alt_number N6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n7: mod_morph_n7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N7>, <&shift_alt_number N7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n8: mod_morph_n8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N8>, <&shift_alt_number N8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        mm_n9: mod_morph_n9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&alt_number N9>, <&shift_alt_number N9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};

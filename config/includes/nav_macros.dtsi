@@ -1,0 +1,31 @@
+#define NAV_MACRO_WAIT_MS 40
+#define NAV_MACRO_TAP_MS 40
+
+/ {
+  macros {
+    alt_number: alt_number {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      wait-ms = <NAV_MACRO_WAIT_MS>;
+      tap-ms = <NAV_MACRO_TAP_MS>;
+      bindings
+        = <&macro_press &kp LALT>
+        , <&macro_param_1to1>
+        , <&macro_tap &kp MACRO_PLACEHOLDER>
+        , <&macro_release &kp LALT>;
+    };
+    shift_alt_number: shift_alt_number {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      wait-ms = <NAV_MACRO_WAIT_MS>;
+      tap-ms = <NAV_MACRO_TAP_MS>;
+      bindings
+        = <&macro_press &kp LSHFT>
+        , <&macro_press &kp LALT>
+        , <&macro_param_1to1>
+        , <&macro_tap &kp MACRO_PLACEHOLDER>
+        , <&macro_release &kp LALT>
+        , <&macro_release &kp LSHFT>;
+    };
+  };
+};
