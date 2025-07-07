@@ -11,19 +11,19 @@
         };
         combo_shift_alt_n1 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LB3>; // RSHFT + N1
+            key-positions = <RH1 LT3>; // RSHFT + N1
             bindings = <&shift_alt_number N1>;
             layers = <NAV>;
         };
         combo_shift_alt_n2 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LB2>; // RSHFT + N2
+            key-positions = <RH1 LT2>; // RSHFT + N2
             bindings = <&shift_alt_number N2>;
             layers = <NAV>;
         };
         combo_shift_alt_n3 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LB1>; // RSHFT + N3
+            key-positions = <RH1 LT1>; // RSHFT + N3
             bindings = <&shift_alt_number N3>;
             layers = <NAV>;
         };
@@ -47,19 +47,19 @@
         };
         combo_shift_alt_n7 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LT3>; // RSHFT + N7
+            key-positions = <RH1 LB3>; // RSHFT + N7
             bindings = <&shift_alt_number N7>;
             layers = <NAV>;
         };
         combo_shift_alt_n8 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LT2>; // RSHFT + N8
+            key-positions = <RH1 LB2>; // RSHFT + N8
             bindings = <&shift_alt_number N8>;
             layers = <NAV>;
         };
         combo_shift_alt_n9 {
             timeout-ms = <NAV_COMBO_TIMEOUT_MS>;
-            key-positions = <RH1 LT1>; // RSHFT + N9
+            key-positions = <RH1 LB1>; // RSHFT + N9
             bindings = <&shift_alt_number N9>;
             layers = <NAV>;
         };
